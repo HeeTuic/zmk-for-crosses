@@ -1,7 +1,7 @@
 if SHIELD_CROSSES_RIGHT
 
 config ZMK_KEYBOARD_NAME
-	default "Crosses"
+	default "Crosses36"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
