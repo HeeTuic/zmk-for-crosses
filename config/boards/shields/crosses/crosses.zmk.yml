@@ -1,5 +1,5 @@
 file_format: "1"
-id: crosses
+id: crosses36
 name: Crosses
 type: shield
 url: https://github.com/Good-Great-Grand-Wonderful/crosses
@@ -9,5 +9,5 @@ features:
   - pointer
   - underglow
 siblings:
-  - crosses36_left
-  - crosses36_right
+  - crosses_left
+  - crosses_right
