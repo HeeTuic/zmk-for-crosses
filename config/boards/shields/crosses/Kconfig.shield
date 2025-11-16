@@ -1,5 +1,5 @@
 config SHIELD_CROSSES_LEFT
-    def_bool $(shields_list_contains,crosses_left)
+    def_bool $(shields_list_contains,crosses36_left)
 
 config SHIELD_CROSSES_RIGHT
-    def_bool $(shields_list_contains,crosses_right)
+    def_bool $(shields_list_contains,crosses36_right)
