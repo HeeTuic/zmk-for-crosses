@@ -46,7 +46,7 @@ keymap {
             bindings = <
 &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 3  &none      &bt BT_CLR    &bt BT_CLR  &none      &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &none
 &none    &none         &none         &none         &none      &none         &none       &none      &none         &none         &none           &none
-&none    &none         &none         &none         &none      &none         &none       &non       &none         &none         &none           &none
+&none    &none         &none         &none         &none      &none         &none       &none      &none         &none         &none           &none
                                  &mkp MCLK  &mkp LCLK  &mkp RCLK               &mkp RCLK   &mkp LCLK    &mkp MCLK
             >;
         };
