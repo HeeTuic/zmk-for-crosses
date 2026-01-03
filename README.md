@@ -1,5 +1,5 @@
-## zmk-config for Crosses/Bridges
-This template is designed exclusively for the Wireless Crosses/Bridges that utilize the 'MIiaoMiao' customized PCB variant.
+## zmk-config for crosses/bridges
+This template is designed exclusively for the Wireless crosses/bridges that utilize the 'MIiaoMiao' customized PCB variant.
 
 This library applies to the one-handed trackball variant.  
 For the wireless 3x5 layout dual-trackball version, use this library:[zmk-for-crosses35-dual](https://github.com/HeeTuic/zmk-for-crosses35-dual)  
