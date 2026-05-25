@@ -11,46 +11,72 @@
 };
     
 / {
+    chosen { zmk,physical-layout = &gggw_crosses_54_layout; };
+
+    combos {
+        compatible = "zmk,combos";
+
+        Combo1 {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <50 49>;
+        };
+
+        Combo2 {
+            bindings = <&tog 3>;
+            key-positions = <49 48>;
+        };
+
+        Combo3 {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <51 52>;
+        };
+
+        Combo4 {
+            bindings = <&tog 1>;
+            key-positions = <52 53>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         Base {
             bindings = <
-&kp ESC           &kp N1     &kp N2   &kp N3   &kp N4   &kp N5       &kp N6   &kp N7   &kp N8       &kp N9   &kp N0       &kp BSPC
-&kp TAB           &kp Q      &kp W    &kp E    &kp R    &kp T        &kp Y    &kp U    &kp I        &kp O    &kp P        &kp BSLH
-&kp LEFT_SHIFT    &kp A      &kp S    &kp D    &kp F    &kp G        &kp H    &kp J    &kp K        &kp L    &kp SEMI    &kp APOS
-&kp LCTRL         &lt 3 Z    &kp X    &kp C    &kp V    &kp B        &kp N    &kp M    &kp COMMA    &kp DOT  &lt 3 SLASH  &kp ESC
-                      &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE        &lt 2 ENTER  &kp BACKSPACE    &kp RIGHT_ALT
+&kp TILDE    &kp N1  &kp N2  &kp N3                    &kp N4         &kp N5     &kp N6     &kp N7   &kp N8                    &kp N9         &kp N0      &kp LEFT_BRACKET
+&kp TAB      &kp B   &kp L   &kp D                     &kp C          &kp V      &kp J      &kp F    &kp O                     &kp U          &kp COMMA   &kp RIGHT_BRACKET
+&kp MINUS    &kp N   &kp R   &kp T                     &kp S          &kp G      &kp Y      &kp H    &kp A                     &kp E          &kp I       &kp SLASH
+&lt 2 EQUAL  &kp X   &kp Q   &kp M                     &kp W          &kp Z      &kp K      &kp P    &kp SQT                   &kp SEMICOLON  &kp PERIOD  &lt 2 BACKSLASH
+                             &mt RIGHT_CONTROL ESCAPE  &kp BACKSPACE  &kp ENTER  &kp SPACE  &kp DEL  &mt RIGHT_SHIFT CAPSLOCK
             >;
         };
 
         Lower {
             bindings = <
-&kp LS(N1)        &kp LS(N2)  &kp LS(N3)      &kp LS(N4)    &kp LS(N5)    &kp LS(N6)    &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &kp LS(MINUS)  &kp LS(EQUAL)
-&kp TAB           &kp Q      &kp W    &kp E    &kp R    &kp T        &kp Y    &kp U    &kp I        &kp O    &kp P        &kp BSLH
-&kp LEFT_SHIFT    &kp A      &kp S    &kp D    &kp F    &kp G        &kp H    &kp J    &kp UP_ARROW        &kp L    &kp SEMI    &kp APOS
-&kp LCTRL         &kp Z    &kp X    &kp C    &kp V    &kp B          &kp N    &kp LEFT_ARROW    &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp SLASH  &kp ESC
-                           &none         &none     &none      &kp F11    &kp F12    &kp SPACE
+&kp LC(LS(ESCAPE))  &kp LG(I)           &kp LG(PERIOD)      &kp LG(E)       &kp LG(LS(S))        &kp LG(PRINTSCREEN)  &kp CARET  &kp NUMBER_7  &kp N8        &kp N9        &kp MINUS     &kp LEFT_PARENTHESIS
+&kp HOME            &kp LC(UP_ARROW)    &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &kp PAGE_UP          &none      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS      &kp RIGHT_PARENTHESIS
+&kp END             &kp LC(DOWN_ARROW)  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp PAGE_DOWN        &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &kp SQT
+&kp LC(Y)           &kp LC(Z)           &kp LC(X)           &kp LC(C)       &kp LC(V)            &kp LC(A)            &kp COMMA  &kp N0        &kp N0        &kp PERIOD    &kp ASTERISK  &kp DOUBLE_QUOTES
+                                                            &trans          &trans               &trans               &trans     &trans        &trans
             >;
         };
 
         Raise {
             bindings = <
-&kp F1      &kp F2      &kp F3         &kp F4         &kp F5          &kp F6        &kp F7         &kp F8    &kp F9     &kp F10  &kp F11 &kp F12           
-&kp TAB           &kp Q      &kp W    &kp E    &kp R    &kp T        &kp Y    &kp U    &kp I        &kp O    &kp P        &kp BSLH
-&kp LEFT_SHIFT    &kp A      &kp S    &kp D    &kp F    &kp G        &kp H    &kp J    &kp UP_ARROW        &kp L    &kp SEMI    &kp APOS
-&kp LCTRL         &kp Z    &kp X    &kp C    &kp V    &kp B          &kp N    &kp LEFT_ARROW    &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp SLASH  &kp ESC
-                       &none           &none            &none            &none      &none    &none
+&kp F1            &kp F2             &kp F3              &kp F4           &kp F5           &kp F6           &kp F7      &kp F8           &kp F9      &kp F10          &kp F11         &kp F12
+&kp C_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP     &bl BL_TOG       &bl BL_DEC       &bl BL_INC       &none       &none            &none       &none            &none           &none
+&kp C_PLAY_PAUSE  &kp C_REWIND       &kp C_FAST_FORWARD  &rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &kp SYSREQ  &kp PRINTSCREEN  &kp INSERT  &kp PAUSE_BREAK  &kp KP_NUMLOCK  &kp SCROLLLOCK
+&trans            &trans             &trans              &rgb_ug RGB_EFF  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &none       &none            &none       &none            &none           &none
+                                                         &trans           &trans           &trans           &trans      &trans           &trans
             >;
         };
 
         Mouse {
             bindings = <
-&none    &none          &none           &none           &none       &none               &none       &none   &none         &none         &none           &none
-&none    &bt BT_SEL 0   &bt BT_SEL 1    &bt BT_SEL 3    &none       &bt BT_CLR          &bt BT_CLR  &none   &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &none
-&none    &none          &none           &none           &none       &none               &none       &none   &none         &none         &none           &none
-&none    &none          &none           &none          &none        &none               &studio_unlock       &none   &none         &none         &none           &none
-              &mkp MCLK  &mkp LCLK  &mkp RCLK    &mkp RCLK   &mkp LCLK    &mkp MCLK
+&studio_unlock  &trans  &trans          &trans          &trans           &trans  &mkp LCLK  &mkp MCLK       &mkp RCLK       &trans           &trans  &studio_unlock
+&trans          &trans  &trans          &msc SCRL_UP    &trans           &trans  &trans     &trans          &mmv MOVE_UP    &trans           &trans  &trans
+&trans          &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+&trans          &trans  &trans          &trans          &trans           &trans  &mkp LCLK  &mkp MCLK       &mkp RCLK       &trans           &trans  &trans
+                                        &trans          &trans           &trans  &mkp LCLK  &mkp MCLK       &mkp RCLK
             >;
         };
 
