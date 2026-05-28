@@ -1,6 +1,6 @@
 # ZMK Config for Crosses/Bridges
 
-![ZMK Build](https://img.shields.io/github/actions/workflow/status/HeeTuic/zmk-for-crosses/build.yml?branch=46&label=ZMK%20Build&style=for-the-badge&color=2ac3de) ![Keymap Draw](https://img.shields.io/github/actions/workflow/status/HeeTuic/zmk-for-crosses/draw-keymaps.yml?label=Keymap%20Draw&style=for-the-badge&color=bb9af7) &nbsp;&nbsp;&nbsp;&nbsp; [![English](https://img.shields.io/badge/%F0%9F%8C%90%20Language-English-1b4c7e?style=for-the-badge)](README.md)[![简体中文](https://img.shields.io/badge/-%20%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-2e6b5e?style=for-the-badge)](README_ZH.md)
+![ZMK Build](https://img.shields.io/github/actions/workflow/status/HeeTuic/zmk-for-crosses/build.yml?branch=46_RGB&label=ZMK%20Build&style=for-the-badge&color=2ac3de) ![Keymap Draw](https://img.shields.io/github/actions/workflow/status/HeeTuic/zmk-for-crosses/draw-keymaps.yml?label=Keymap%20Draw&style=for-the-badge&color=bb9af7) &nbsp;&nbsp;&nbsp;&nbsp; [![English](https://img.shields.io/badge/%F0%9F%8C%90%20Language-English-1b4c7e?style=for-the-badge)](README.md)[![简体中文](https://img.shields.io/badge/-%20%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-2e6b5e?style=for-the-badge)](README_ZH.md)
 
 This repository provides the official ZMK firmware for the "MIAOMIAO" hardware variant of the Crosses/Bridges split keyboard. It features native ZMK Studio support for real-time remapping and optimized wireless performance.
 
