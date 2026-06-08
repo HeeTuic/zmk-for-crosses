@@ -1,174 +1,217 @@
 layout: {zmk_keyboard: crosses}
 layers:
   Base:
-  - Tab
-  - Q
-  - W
-  - E
-  - R
-  - T
+  - '&mkp MCLK'
+  - '&mkp RCLK'
   - Y
-  - U
-  - I
   - O
-  - P
-  - BSLH
-  - Shift
-  - A
-  - S
-  - D
+  - X
+  - '&mkp LCLK'
   - F
-  - G
+  - C
+  - L
+  - P
+  - Q
+  - ''
+  - '&osm_sa'
   - H
+  - I
+  - E
+  - A
+  - U
+  - D
+  - S
+  - T
+  - N
+  - R
+  - Tab
+  - {t: BaseDpi, h: toggle}
+  - Z
+  - {t: Funcionalidade, h: sticky}
   - J
   - K
-  - L
-  - ;
-  - ''''
-  - Ctrl
-  - {t: Z, h: Mouse}
-  - X
-  - C
-  - V
-  - B
-  - N
+  - DEL
+  - W
+  - G
   - M
+  - B
+  - V
+  - CAPS LOCK
+  - {t: Pontuacao, h: sticky}
+  - {t: ESC, h: NumericaSetas}
+  - {t: Space, h: Ctrl}
+  - {t: BSPC, h: Shift}
+  - {t: Enter, h: Alt}
+  - {t: Cmd, h: sticky}
+  Pontuacao:
+  - ''
+  - Sft+3
+  - Sft+6
+  - Sft+4
+  - ''''
+  - Sft+5
+  - Sft+`
+  - Sft+2
+  - Sft+=
+  - /
+  - \
+  - KP ENTER
+  - '['
+  - '-'
+  - Sft+[
+  - Sft+9
+  - Sft+'
+  - ','
+  - Sft+1
   - ','
   - .
-  - {t: /, h: Mouse}
-  - ESC
-  - LEFT WIN
-  - Alt
-  - {t: Space, h: Lower}
-  - {t: Enter, h: Raise}
-  - {t: BSPC, h: Raise}
-  - Space
-  Lower:
+  - ;
+  - '='
+  - ']'
   - ''
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - ''
-  - ''
-  - F1
-  - F2
-  - F3
-  - F4
-  - ''
-  - ''
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - ''
-  - ''
-  - F5
-  - F6
-  - F7
-  - F8
-  - ''
-  - ''
-  - '9'
-  - '0'
-  - ''
-  - ''
-  - ''
-  - ''
-  - F9
-  - F10
-  - F11
-  - F12
-  - ''
-  - ''
-  - ''
+  - Sft+-
+  - Sft+]
+  - Sft+0
+  - '`'
+  - Sft+.
+  - Sft+/
+  - Sft+;
+  - Sft+\
+  - Sft+8
+  - Sft+7
+  - KP NUMLOCK
   - {type: held}
   - ''
+  - Ctrl
+  - Base
+  - Alt
+  - ''
+  NumericaSetas:
   - ''
   - ''
-  Raise:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+7
+  - Sft+8
+  - Sft+9
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: Ctrl, h: sticky}
+  - LEFT ARROW
+  - RIGHT ARROW
+  - ''
+  - Sft+0
+  - Sft+4
+  - Sft+5
+  - Sft+6
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - DOWN ARROW
+  - UP ARROW
+  - ''
   - ''
   - Sft+1
   - Sft+2
   - Sft+3
-  - Sft+4
   - ''
   - ''
-  - F1
+  - ''
+  - {type: held}
+  - ''
+  - {t: Shift, h: sticky}
+  - {t: Alt, h: sticky}
+  - {t: Cmd, h: sticky}
+  Funcionalidade:
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - BT CLR
+  - ''
+  - ''
   - F2
-  - F3
-  - F4
-  - ''
-  - ''
-  - Sft+5
-  - Sft+6
-  - Sft+7
-  - Sft+8
-  - ''
-  - ''
-  - F5
-  - F6
-  - F7
-  - F8
-  - ''
-  - ''
-  - Sft+9
-  - Sft+0
-  - Sft+-
-  - ''
-  - ''
-  - ''
-  - F9
-  - F10
-  - F11
   - F12
   - ''
   - ''
   - ''
   - ''
-  - {type: held}
   - ''
-  - Space
-  Mouse:
-  - ''
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '3'}
-  - ''
-  - BT CLR
-  - BT CLR
-  - ''
-  - {t: BT, h: '2'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '0'}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - F8
+  - F3
+  - F1
+  - F7
+  - F5
+  - F11
+  - F4
+  - F9
   - ''
   - ''
   - ''
   - ''
   - {type: held}
   - ''
+  - F6
+  - ''
+  - ''
+  - F10
   - ''
   - ''
   - ''
-  - '&studio_unlock'
   - ''
   - ''
   - ''
+  - {t: Ctrl, h: sticky}
+  - {t: Shift, h: sticky}
+  - {t: Alt, h: sticky}
   - ''
-  - ''
+  BaseDpi:
   - '&mkp MCLK'
-  - '&mkp LCLK'
   - '&mkp RCLK'
-  - '&mkp RCLK'
+  - Y
+  - O
+  - X
   - '&mkp LCLK'
-  - '&mkp MCLK'
+  - F
+  - C
+  - L
+  - P
+  - Q
+  - ''
+  - '&osm_sa'
+  - H
+  - I
+  - E
+  - A
+  - U
+  - D
+  - S
+  - T
+  - N
+  - R
+  - Tab
+  - {t: Base, h: toggle}
+  - Z
+  - {t: Funcionalidade, h: sticky}
+  - J
+  - K
+  - DEL
+  - W
+  - G
+  - M
+  - B
+  - V
+  - CAPS LOCK
+  - {t: Pontuacao, h: sticky}
+  - {t: ESC, h: NumericaSetas}
+  - {t: Space, h: Ctrl}
+  - {t: BSPC, h: Shift}
+  - {t: Enter, h: Alt}
+  - {t: Cmd, h: sticky}
