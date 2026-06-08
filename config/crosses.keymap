@@ -25,7 +25,7 @@
             bindings = <
 &mkp MCLK             &mkp RCLK            &kp Y                 &kp O               &kp X               &mkp LCLK            &kp F             &kp C                  &kp L                      &kp P                   &kp Q               &none
 &osm_sa           &kp H                &kp I                 &kp E               &kp A               &kp U                &kp D             &kp S                  &kp T                      &kp N                   &kp R               &kp TAB
-&to 4             &kp Z                &sl 3                 &kp J               &kp K               &kp DELETE           &kp W             &kp G                  &kp M                      &kp B                   &kp V               &kp CAPS_LOCK
+&to 4             &kp Z                &sl 3                 &kp J               &kp K               &kp DELETE           &kp W             &kp G                  &kp M                      &kp B                   &kp V               &kp CAPSLOCK
                                                         &sl 1                &lt 2 ESCAPE       &mt LEFT_CONTROL SPACE  &mt RIGHT_SHIFT BACKSPACE  &mt LEFT_ALT ENTER    &sk LEFT_GUI
             >;
         };
@@ -41,9 +41,9 @@
 
         NumericaSetas {
             bindings = <
-&none  &none  &none            &none          &none           &none  &none          &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &none  &none
-&none  &none  &sk LEFT_CONTROL  &kp LEFT_ARROW  &kp RIGHT_ARROW  &none  &kp LS(N0)    &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &none  &none
-&none  &none  &none            &kp DOWN_ARROW  &kp UP_ARROW     &none  &none          &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &none  &none
+&none  &none  &none            &none          &none           &none  &none          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none  &none
+&none  &none  &sk LEFT_CONTROL  &kp LEFT_ARROW  &kp RIGHT_ARROW  &none  &kp NUMBER_0    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none  &none
+&none  &none  &none            &kp DOWN_ARROW  &kp UP_ARROW     &none  &none          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none  &none
                             &none  &none  &none            &sk LEFT_SHIFT  &sk LEFT_ALT  &sk RIGHT_GUI
             >;
         };
@@ -61,7 +61,7 @@
             bindings = <
 &mkp MCLK             &mkp RCLK            &kp Y                 &kp O               &kp X               &mkp LCLK            &kp F             &kp C                  &kp L                      &kp P                   &kp Q               &none
 &osm_sa               &kp H                &kp I                 &kp E               &kp A               &kp U                &kp D             &kp S                  &kp T                      &kp N                   &kp R               &kp TAB
-&to 0                 &kp Z                &sl 3                 &kp J               &kp K               &kp DELETE           &kp W             &kp G                  &kp M                      &kp B                   &kp V               &kp CAPS_LOCK
+&to 0                 &kp Z                &sl 3                 &kp J               &kp K               &kp DELETE           &kp W             &kp G                  &kp M                      &kp B                   &kp V               &kp CAPSLOCK
                                                             &sl 1                &lt 2 ESCAPE       &mt LEFT_CONTROL SPACE  &mt RIGHT_SHIFT BACKSPACE  &mt LEFT_ALT ENTER    &sk LEFT_GUI
             >;
         };
