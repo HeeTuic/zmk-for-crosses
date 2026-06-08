@@ -36,7 +36,7 @@ layers:
   - M
   - B
   - V
-  - CAPS LOCK
+  - CAPSLOCK
   - {t: Pontuacao, h: sticky}
   - {t: ESC, h: NumericaSetas}
   - {t: Space, h: Ctrl}
@@ -94,9 +94,9 @@ layers:
   - ''
   - ''
   - ''
-  - Sft+7
-  - Sft+8
-  - Sft+9
+  - '7'
+  - '8'
+  - '9'
   - ''
   - ''
   - ''
@@ -105,10 +105,10 @@ layers:
   - LEFT ARROW
   - RIGHT ARROW
   - ''
-  - Sft+0
-  - Sft+4
-  - Sft+5
-  - Sft+6
+  - '0'
+  - '4'
+  - '5'
+  - '6'
   - ''
   - ''
   - ''
@@ -118,9 +118,9 @@ layers:
   - UP ARROW
   - ''
   - ''
-  - Sft+1
-  - Sft+2
-  - Sft+3
+  - '1'
+  - '2'
+  - '3'
   - ''
   - ''
   - ''
@@ -208,7 +208,7 @@ layers:
   - M
   - B
   - V
-  - CAPS LOCK
+  - CAPSLOCK
   - {t: Pontuacao, h: sticky}
   - {t: ESC, h: NumericaSetas}
   - {t: Space, h: Ctrl}
