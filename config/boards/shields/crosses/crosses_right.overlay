@@ -57,10 +57,10 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        // índices iguais aos #define do crosses.keymap: SCROLL 4, MOUSE 6, SNIPE 7
-        scroll-layers = <4>;
+        // índices iguais aos #define do crosses.keymap: MOUSE 4, SCROLL 6, SNIPE 7 (Scroll/Snipe acima do Mouse)
+        scroll-layers = <6>;
         snipe-layers = <7>;
-        automouse-layer = <6>;
+        automouse-layer = <4>;
     };
 };
 

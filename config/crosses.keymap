@@ -8,9 +8,11 @@
 #define PONT   1
 #define NUM    2
 #define FUNC   3
-#define SCROLL 4
+// O driver do trackball decide rolar/precisão pelo layer ATIVO MAIS ALTO: Scroll e Snipe
+// precisam ficar acima do Mouse (automouse), senão o Mouse ligado esconde os dois.
+#define MOUSE  4
 #define FLUXO  5
-#define MOUSE  6
+#define SCROLL 6
 #define SNIPE  7
 
 &mt {
@@ -118,14 +120,14 @@
             >;
         };
 
-        // Segurando &mo SCROLL, o trackball rola (scroll-layers no overlay)
-        Scroll {
-            display-name = "Scroll";
+        // Automouse: ativa ao mexer no trackball. Cliques na home row esquerda.
+        Mouse {
+            display-name = "Mouse";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans     &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mo SNIPE   &mkp RCLK  &mkp MCLK  &mkp LCLK  &mo SCROLL   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans     &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                               &trans     &trans     &trans       &trans  &trans  &trans
             >;
         };
 
@@ -142,14 +144,14 @@
             >;
         };
 
-        // Automouse: ativa ao mexer no trackball. Cliques na home row esquerda.
-        Mouse {
-            display-name = "Mouse";
+        // Segurando &mo SCROLL, o trackball rola (scroll-layers no overlay)
+        Scroll {
+            display-name = "Scroll";
             bindings = <
-&trans  &trans      &trans     &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mo SNIPE   &mkp RCLK  &mkp MCLK  &mkp LCLK  &mo SCROLL   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &trans     &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                               &trans     &trans     &trans       &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
