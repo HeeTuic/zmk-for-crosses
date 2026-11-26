@@ -114,14 +114,15 @@
             >;
         };
 
-        // Automouse: ativa ao mexer no trackball. Cliques na home row esquerda.
+        // Mouse: liga ao mexer no trackball (zip_temp_layer no overlay). Só os polegares esquerdos mudam:
+        // clique direito · Scroll (segurar) · clique. Qualquer outra tecla desliga o layer e digita normal.
         Mouse {
             display-name = "Mouse";
             bindings = <
-&trans  &trans      &trans     &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mo SNIPE   &mkp RCLK  &mo SCROLL &mkp LCLK  &mkp MCLK    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &trans     &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                               &trans     &trans     &trans       &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &mkp RCLK  &mo SCROLL  &mkp LCLK  &trans  &trans  &trans
             >;
         };
 

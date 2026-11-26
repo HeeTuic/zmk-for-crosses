@@ -5,6 +5,7 @@
  */
  
 #include "crosses.dtsi"
+#include <input/processors.dtsi>
 
 &default_transform {
     col-offset = <6>;
@@ -57,10 +58,10 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        // índices iguais aos #define do crosses.keymap: MOUSE 4, SCROLL 6, SNIPE 7 (Scroll/Snipe acima do Mouse)
+        // índices iguais aos #define do crosses.keymap: SCROLL 6, SNIPE 7 (acima do MOUSE 4)
+        // O layer Mouse é ligado pelo zip_temp_layer do ZMK (abaixo), não pelo automouse do driver.
         scroll-layers = <6>;
         snipe-layers = <7>;
-        automouse-layer = <4>;
     };
 };
 
@@ -72,6 +73,17 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+        // mexer a bola liga o layer Mouse (4) por 450 ms após o último movimento
+        input-processors = <&zip_temp_layer 4 450>;
     };
 };
 
+// Automouse nativo do ZMK:
+//  - require-prior-idle-ms: não liga o Mouse se alguma tecla foi apertada nos últimos 400 ms
+//    (a bola tremendo enquanto você digita não vira clique)
+//  - excluded-positions: os três polegares esquerdos (clique dir. · Scroll · clique) não desligam o
+//    layer; qualquer outra tecla desliga na hora
+&zip_temp_layer {
+    require-prior-idle-ms = <400>;
+    excluded-positions = <36 37 38>;
+};
