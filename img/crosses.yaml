@@ -1,19 +1,19 @@
 layout: {zmk_keyboard: crosses}
 layers:
   Base:
-  - '&mkp MCLK'
-  - '&mkp RCLK'
+  - DEL
+  - click dir.
   - Y
   - O
   - X
-  - '&mkp LCLK'
+  - click
   - F
   - C
   - L
   - P
   - Q
   - ''
-  - {t: (MOD LSFT | MOD LALT), h: sticky}
+  - {t: herdr prefix, h: ⇧⌥}
   - H
   - I
   - E
@@ -25,9 +25,9 @@ layers:
   - N
   - R
   - Tab
-  - {t: NumericaSetas, h: toggle}
+  - {t: NumSetas, h: toggle}
   - Z
-  - {t: Funcionalidade, h: sticky}
+  - {t: Func, h: sticky}
   - J
   - K
   - Scroll
@@ -36,63 +36,22 @@ layers:
   - M
   - B
   - V
-  - CAPSLOCK
-  - {t: Pontuacao, h: sticky}
-  - {t: ESC, h: NumericaSetas}
+  - CapsWord
+  - {t: Pontuacao, h: Fluxo}
+  - {t: ESC, h: NumSetas}
   - {t: Space, h: Ctrl}
   - {t: BSPC, h: Shift}
   - {t: Enter, h: Alt}
   - {t: Cmd, h: sticky}
-  Pontuacao:
-  - ''
-  - Sft+3
-  - Sft+6
-  - Sft+4
-  - ''''
-  - Sft+5
-  - Sft+`
-  - Sft+2
-  - Sft+=
-  - /
-  - \
-  - KP ENTER
-  - '['
-  - '-'
-  - Sft+[
-  - Sft+9
-  - Sft+'
-  - Sft+,
-  - Sft+1
-  - ','
-  - .
-  - ;
-  - '='
-  - ']'
-  - ''
-  - Sft+-
-  - Sft+]
-  - Sft+0
-  - '`'
-  - Sft+.
-  - Sft+/
-  - Sft+;
-  - Sft+\
-  - Sft+8
-  - Sft+7
-  - KP NUMLOCK
-  - {type: held}
-  - ''
-  - Ctrl
-  - Base
-  - Alt
-  - ''
-  NumericaSetas:
+  Pontuacao: ['', Sft+3, Sft+6, Sft+4, '''', Sft+5, Sft+`, Sft+2, Sft+=, /, \, KP ENTER, '[', '-', 'Sft+[', Sft+9, Sft+', 'Sft+,', Sft+1, ',', ., ;, '=', ']', '',
+    Sft+-, 'Sft+]', Sft+0, '`', Sft+., Sft+/, Sft+;, Sft+\, Sft+8, Sft+7, '', '', '', Ctrl, BSPC, Alt, '']
+  NumSetas:
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - palavra ◀
+  - PgDn
+  - PgUp
+  - palavra ▶
   - ''
   - '7'
   - '8'
@@ -100,28 +59,28 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Home
   - {t: Ctrl, h: sticky}
   - LEFT ARROW
   - RIGHT ARROW
-  - ''
+  - End
   - '0'
   - '4'
   - '5'
   - '6'
   - ''
   - ''
-  - ''
-  - ''
+  - {t: Base, h: toggle}
+  - DEL
   - ''
   - DOWN ARROW
   - UP ARROW
   - ''
-  - ''
+  - ','
   - '1'
   - '2'
   - '3'
-  - ''
+  - .
   - ''
   - ''
   - {type: held}
@@ -129,7 +88,7 @@ layers:
   - {t: Shift, h: sticky}
   - {t: Alt, h: sticky}
   - {t: Cmd, h: sticky}
-  Funcionalidade:
+  Func:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -140,38 +99,38 @@ layers:
   - F7
   - F8
   - F9
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - VOL UP
+  - PP
+  - reset
+  - á
+  - é
+  - ê
+  - ã
+  - õ
   - F10
   - F4
   - F5
   - F6
-  - ''
-  - ''
-  - ''
-  - ''
+  - VOL DN
+  - NEXT
+  - boot
+  - ç
   - {type: held}
-  - ''
-  - ''
-  - ''
+  - ção
+  - ões
+  - à
   - F11
   - F1
   - F2
   - F3
+  - MUTE
+  - PREV
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - BRI DN
+  - BRI UP
+  - print área
+  - print/gravar
+  - Studio 🔓
   Scroll:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -203,6 +162,135 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Fluxo:
+  - herdr ?
+  - nova aba
+  - aba ◀
+  - aba ▶
+  - goto
+  - shell flut.
+  - aero service
+  - observ.
+  - obsidian
+  - scratch
+  - aero windows
+  - herdr prefix
+  - {t: ▽, type: trans}
+  - zoom
+  - agente notif.
+  - agente ◀
+  - agente ▶
+  - workspaces
+  - web
+  - chat
+  - devops
+  - music
+  - aero resize
+  - split →
+  - {t: ▽, type: trans}
+  - lazygit
+  - lazydocker
+  - gh dash
+  - lazysql
+  - PR atual
+  - aero infra
+  - code
+  - infra
+  - term
+  - aero move
+  - split ↓
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Mouse:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Snipe
+  - click dir.
+  - click meio
+  - click
+  - Scroll
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Snipe:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
