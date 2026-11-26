@@ -198,3 +198,4 @@ parse_config:
     "&studio_unlock": "Studio 🔓"
     "&kp LG(SPACE)": "Spotlight"
     "&kp LC(LA(LG(LS(M))))": "mic mudo"
+    "&ota": "OTA (Bluetooth)"

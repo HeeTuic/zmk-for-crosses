@@ -36,6 +36,15 @@
             bindings = <&kp>, <&kp>;
         };
 
+        // OTA: reinicia no bootloader Adafruit em modo atualização por Bluetooth (GPREGRET = 0xA8,
+        // DFU_MAGIC_OTA_RESET). Nome do nó com até 8 caracteres porque também roda na metade periférica.
+        ota: otadfu {
+            compatible = "zmk,behavior-reset";
+            #binding-cells = <0>;
+            type = <0xA8>;
+            display-name = "OTA";
+        };
+
         // Polegar esquerdo externo: toque = pontuação sticky (como antes), segurar = Fluxo
         slmo: slmo {
             compatible = "zmk,behavior-hold-tap";
@@ -108,7 +117,7 @@
         Funcionalidade {
             display-name = "Func";
             bindings = <
-&none         &bt BT_CLR        &bt BT_SEL 3      &bt BT_SEL 2          &bt BT_SEL 1        &bt BT_SEL 0       &kp F12   &kp F7  &kp F8    &kp F9  &none         &none
+&ota          &bt BT_CLR        &bt BT_SEL 3      &bt BT_SEL 2          &bt BT_SEL 1        &bt BT_SEL 0       &kp F12   &kp F7  &kp F8    &kp F9  &none         &ota
 &sys_reset    &kp C_VOL_DN      &kp C_VOL_UP      &m_oes                &m_ao               &kp C_MUTE         &kp F10   &kp F4  &kp F5    &kp F6  &none         &sys_reset
 &bootloader   &kp C_PREV        &none             &kp C_PP              &kp C_NEXT          &kp LC(LA(LG(LS(M)))) &kp F11   &kp F1  &kp F2    &kp F3  &none         &bootloader
                                 &none             &kp C_BRI_DN          &kp C_BRI_UP        &kp LG(LS(N4))     &kp LG(LS(N5))     &studio_unlock
