@@ -83,7 +83,7 @@
             bindings = <
 &kp DELETE            &kp LC(A)            &kp Y                 &kp O               &kp X               &kp LG(SPACE)        &kp F             &kp C                  &kp L                      &kp P    &kp Q  &key_repeat
 &mt LS(LALT) LC(A)    &kp H                &kp I                 &kp E               &kp A               &kp U                &kp D             &kp S                  &kp T                      &kp N    &kp R  &kp TAB
-&to NUM               &kp Z                &sl FUNC              &kp J               &kp K               &mo SCROLL           &kp W             &kp G                  &kp M                      &kp B    &kp V  &caps_word
+&to NUM               &kp Z                &sl FUNC              &kp J               &kp K               &kp ESCAPE           &kp W             &kp G                  &kp M                      &kp B    &kp V  &caps_word
                                                         &slmo FLUXO PONT     &lt NUM ESCAPE     &spc_ctrl LEFT_CONTROL SPACE  &mt RIGHT_SHIFT BACKSPACE  &mt LEFT_ALT ENTER    &sk LEFT_GUI
             >;
         };
@@ -144,7 +144,7 @@
             >;
         };
 
-        // Segurando &mo SCROLL, o trackball rola (scroll-layers no overlay)
+        // Segurando &mo SCROLL (tecla do U no layer Mouse), o trackball rola (scroll-layers no overlay)
         Scroll {
             display-name = "Scroll";
             bindings = <
