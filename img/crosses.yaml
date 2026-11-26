@@ -205,11 +205,11 @@ layers:
   - pane ↓
   - pane ↑
   - PR atual
-  - aero infra
+  - aero move
   - code
   - infra
   - term
-  - aero move
+  - aero infra
   - goto
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
