@@ -129,7 +129,10 @@ parse_config:
 
   # Rótulos do layer Fluxo (herdr = ctrl+a …, AeroSpace = alt-…) e dos macros de acento
   raw_binding_map:
-    "&hx LS(SLASH)": "herdr ?"
+    "&hx LC(T)": "tarefas"
+    "&hx LC(N)": "captura"
+    "&hx LC(K)": "mapa teclado"
+    "&key_repeat": "repetir"
     "&hx C": "nova aba"
     "&hx P": "aba ◀"
     "&hx N": "aba ▶"

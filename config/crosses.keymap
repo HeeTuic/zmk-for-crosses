@@ -79,7 +79,7 @@
         Base {
             display-name = "Base";
             bindings = <
-&kp DELETE            &kp LC(A)            &kp Y                 &kp O               &kp X               &kp LG(SPACE)        &kp F             &kp C                  &kp L                      &kp P    &kp Q  &none
+&kp DELETE            &kp LC(A)            &kp Y                 &kp O               &kp X               &kp LG(SPACE)        &kp F             &kp C                  &kp L                      &kp P    &kp Q  &key_repeat
 &mt LS(LALT) LC(A)    &kp H                &kp I                 &kp E               &kp A               &kp U                &kp D             &kp S                  &kp T                      &kp N    &kp R  &kp TAB
 &to NUM               &kp Z                &sl FUNC              &kp J               &kp K               &mo SCROLL           &kp W             &kp G                  &kp M                      &kp B    &kp V  &caps_word
                                                         &slmo FLUXO PONT     &lt NUM ESCAPE     &spc_ctrl LEFT_CONTROL SPACE  &mt RIGHT_SHIFT BACKSPACE  &mt LEFT_ALT ENTER    &sk LEFT_GUI
@@ -129,14 +129,15 @@
             >;
         };
 
-        // Segurar o polegar esquerdo externo. Esquerda = herdr (ctrl+a …); direita = AeroSpace,
+        // Segurar o polegar esquerdo externo. Esquerda = herdr (ctrl+a …: coluna externa = tarefas, captura e
+        // mapa do teclado); direita = AeroSpace,
         // com os workspaces na mesma posição dos números do layer NumSetas (Fluxo + 5 = alt-5).
         Fluxo {
             display-name = "Fluxo";
             bindings = <
-&hx LS(SLASH)  &hx C        &hx P        &hx N        &hx G        &hx F         &kp LA(S)        &kp LA(N7)  &kp LA(N8)  &kp LA(N9)  &kp LA(W)  &kp LC(A)
-&trans         &hx Z        &hx O        &hx LS(A)    &hx A        &hx W         &kp LA(N0)       &kp LA(N4)  &kp LA(N5)  &kp LA(N6)  &kp LA(R)  &hx V
-&trans         &hx LC(G)    &hx LC(D)    &hx LC(P)    &hx LC(S)    &hx LC(R)     &kp LS(LA(I))    &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(M)  &hx MINUS
+&hx LC(T)      &hx C        &hx P        &hx N        &hx G        &hx F         &kp LA(S)        &kp LA(N7)  &kp LA(N8)  &kp LA(N9)  &kp LA(W)  &kp LC(A)
+&hx LC(N)      &hx Z        &hx O        &hx LS(A)    &hx A        &hx W         &kp LA(N0)       &kp LA(N4)  &kp LA(N5)  &kp LA(N6)  &kp LA(R)  &hx V
+&hx LC(K)      &hx LC(G)    &hx LC(D)    &hx LC(P)    &hx LC(S)    &hx LC(R)     &kp LS(LA(I))    &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(M)  &hx MINUS
                                          &trans       &trans       &trans        &trans           &trans      &trans
             >;
         };
