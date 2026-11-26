@@ -2,11 +2,11 @@ layout: {zmk_keyboard: crosses}
 layers:
   Base:
   - DEL
-  - click dir.
+  - herdr prefix
   - Y
   - O
   - X
-  - click
+  - Spotlight
   - F
   - C
   - L
