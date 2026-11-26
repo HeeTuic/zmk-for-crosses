@@ -55,17 +55,11 @@
             bindings = <&kp LC(A)>, <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>;
         )
 
-        // Acento por tecla morta do layout Brazilian – Pro (&acc SQT C = ç)
-        ZMK_MACRO2(acc,
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&macro_param_2to1>, <&kp MACRO_PLACEHOLDER>;
-        )
 
-        ZMK_MACRO(m_cao,
+        ZMK_MACRO(m_ao,
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings = <&kp SQT &kp C &kp LS(GRAVE) &kp A &kp O>;
+            bindings = <&kp LS(GRAVE) &kp A &kp O>;
         )
 
         ZMK_MACRO(m_oes,
@@ -81,9 +75,9 @@
         Base {
             display-name = "Base";
             bindings = <
-&kp DELETE            &kp LC(A)            &kp Y                 &kp O               &kp X               &kp LG(SPACE)        &kp F             &kp C                  &kp L                      &kp P    &kp Q  &key_repeat
-&mt LS(LALT) LC(A)    &kp H                &kp I                 &kp E               &kp A               &kp U                &kp D             &kp S                  &kp T                      &kp N    &kp R  &kp TAB
-&to NUM               &kp Z                &sl FUNC              &kp J               &kp K               &kp ESCAPE           &kp W             &kp G                  &kp M                      &kp B    &kp V  &caps_word
+&kp DELETE            &kp LC(A)            &kp Y                 &kp O               &kp X               &kp LG(C)            &kp F             &kp C                  &kp L                      &kp P    &kp Q  &key_repeat
+&kp LC(UP)            &kp H                &kp I                 &kp E               &kp A               &kp U                &kp D             &kp S                  &kp T                      &kp N    &kp R  &kp TAB
+&to NUM               &kp Z                &sl FUNC              &kp J               &kp K               &kp LG(V)            &kp W             &kp G                  &kp M                      &kp B    &kp V  &caps_word
                                                         &slmo FLUXO PONT     &lt NUM ESCAPE     &spc_ctrl LEFT_CONTROL SPACE  &mt RIGHT_SHIFT BACKSPACE  &mt LEFT_ALT ENTER    &sk LEFT_GUI
             >;
         };
@@ -114,8 +108,8 @@
             display-name = "Func";
             bindings = <
 &none         &bt BT_CLR        &bt BT_SEL 3      &bt BT_SEL 2          &bt BT_SEL 1        &bt BT_SEL 0       &kp F12   &kp F7  &kp F8    &kp F9  &kp C_VOL_UP  &kp C_PP
-&sys_reset    &acc SQT A        &acc SQT E        &acc LS(N6) E         &acc LS(GRAVE) A    &acc LS(GRAVE) O   &kp F10   &kp F4  &kp F5    &kp F6  &kp C_VOL_DN  &kp C_NEXT
-&bootloader   &acc SQT C        &none             &m_cao                &m_oes              &acc GRAVE A       &kp F11   &kp F1  &kp F2    &kp F3  &kp C_MUTE    &kp C_PREV
+&sys_reset    &none             &none             &none                 &none               &none              &kp F10   &kp F4  &kp F5    &kp F6  &kp C_VOL_DN  &kp C_NEXT
+&bootloader   &none             &none             &m_ao                 &m_oes              &none              &kp F11   &kp F1  &kp F2    &kp F3  &kp C_MUTE    &kp C_PREV
                                 &none             &kp C_BRI_DN          &kp C_BRI_UP        &kp LG(LS(N4))     &kp LG(LS(N5))     &studio_unlock
             >;
         };
@@ -131,16 +125,17 @@
             >;
         };
 
-        // Segurar o polegar esquerdo externo. Esquerda = herdr (ctrl+a …: coluna externa = tarefas, captura e
-        // mapa do teclado); direita = AeroSpace,
+        // Segurar o polegar esquerdo externo. Esquerda = herdr (ctrl+a …): coluna externa tarefas/captura/mapa,
+        // abas e splits em cima, panes ←↓↑→ na home row, popups embaixo. Polegares direitos = agente ▶ ◀ e notificado.
+        // Direita = AeroSpace,
         // com os workspaces na mesma posição dos números do layer NumSetas (Fluxo + 5 = alt-5).
         Fluxo {
             display-name = "Fluxo";
             bindings = <
-&hx LC(T)      &hx C        &hx P        &hx N        &hx G        &hx F         &kp LA(S)        &kp LA(N7)  &kp LA(N8)  &kp LA(N9)  &kp LA(W)  &kp LC(A)
-&hx LC(N)      &hx Z        &hx O        &hx LS(A)    &hx A        &hx W         &kp LA(N0)       &kp LA(N4)  &kp LA(N5)  &kp LA(N6)  &kp LA(R)  &hx V
-&hx LC(K)      &hx LC(G)    &hx LC(D)    &hx LC(P)    &hx LC(S)    &hx LC(R)     &kp LS(LA(I))    &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(M)  &hx MINUS
-                                         &trans       &trans       &trans        &trans           &trans      &trans
+&hx LC(T)      &hx C        &hx P        &hx N        &hx V        &hx MINUS     &kp LA(S)        &kp LA(N7)  &kp LA(N8)  &kp LA(N9)  &kp LA(W)  &hx F
+&hx LC(N)      &hx H        &hx J        &hx K        &hx L        &hx Z         &kp LA(N0)       &kp LA(N4)  &kp LA(N5)  &kp LA(N6)  &kp LA(R)  &hx W
+&hx LC(K)      &hx LC(G)    &hx LC(D)    &hx LC(P)    &hx LC(S)    &hx LC(R)     &kp LS(LA(I))    &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(M)  &hx G
+                                         &trans       &trans       &trans        &hx A            &hx LS(A)   &hx O
             >;
         };
 
