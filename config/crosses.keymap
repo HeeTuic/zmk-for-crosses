@@ -103,13 +103,14 @@
             >;
         };
 
-        // &sl FUNC + 1 tecla: ão/ões e mídia na mão esquerda (descanso), F-keys na direita, sistema nos polegares
+        // &sl FUNC + 1 tecla: ão/ões e mídia na mão esquerda (descanso), F-keys na direita, sistema nos polegares.
+        // reset/boot nos dois cantos externos: em teclado dividido cada um só age na metade em que é apertado.
         Funcionalidade {
             display-name = "Func";
             bindings = <
 &none         &bt BT_CLR        &bt BT_SEL 3      &bt BT_SEL 2          &bt BT_SEL 1        &bt BT_SEL 0       &kp F12   &kp F7  &kp F8    &kp F9  &none         &none
-&sys_reset    &kp C_VOL_DN      &kp C_VOL_UP      &m_oes                &m_ao               &kp C_MUTE         &kp F10   &kp F4  &kp F5    &kp F6  &none         &none
-&bootloader   &kp C_PREV        &none             &kp C_PP              &kp C_NEXT          &kp LC(LA(LG(LS(M)))) &kp F11   &kp F1  &kp F2    &kp F3  &none         &none
+&sys_reset    &kp C_VOL_DN      &kp C_VOL_UP      &m_oes                &m_ao               &kp C_MUTE         &kp F10   &kp F4  &kp F5    &kp F6  &none         &sys_reset
+&bootloader   &kp C_PREV        &none             &kp C_PP              &kp C_NEXT          &kp LC(LA(LG(LS(M)))) &kp F11   &kp F1  &kp F2    &kp F3  &none         &bootloader
                                 &none             &kp C_BRI_DN          &kp C_BRI_UP        &kp LG(LS(N4))     &kp LG(LS(N5))     &studio_unlock
             >;
         };
