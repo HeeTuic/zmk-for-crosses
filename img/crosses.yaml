@@ -89,7 +89,7 @@ layers:
   - {t: Alt, h: sticky}
   - {t: Cmd, h: sticky}
   Func:
-  - ''
+  - OTA (Bluetooth)
   - BT CLR
   - {t: BT, h: '3'}
   - {t: BT, h: '2'}
@@ -100,7 +100,7 @@ layers:
   - F8
   - F9
   - ''
-  - ''
+  - OTA (Bluetooth)
   - reset
   - VOL DN
   - VOL UP
