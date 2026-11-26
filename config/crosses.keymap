@@ -125,7 +125,7 @@
             display-name = "Mouse";
             bindings = <
 &trans  &trans      &trans     &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mo SNIPE   &mkp RCLK  &mkp MCLK  &mkp LCLK  &mo SCROLL   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mo SNIPE   &mkp RCLK  &mo SCROLL &mkp LCLK  &mkp MCLK    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans      &trans     &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
                                &trans     &trans     &trans       &trans  &trans  &trans
             >;
@@ -144,7 +144,7 @@
             >;
         };
 
-        // Segurando &mo SCROLL (tecla do U no layer Mouse), o trackball rola (scroll-layers no overlay)
+        // Segurando &mo SCROLL (tecla do E no layer Mouse, onde era o clique do meio), o trackball rola (scroll-layers no overlay)
         Scroll {
             display-name = "Scroll";
             bindings = <
