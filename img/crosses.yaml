@@ -99,32 +99,32 @@ layers:
   - F7
   - F8
   - F9
-  - VOL UP
-  - PP
+  - ''
+  - ''
   - reset
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - VOL DN
+  - VOL UP
+  - ões
+  - ão
+  - MUTE
   - F10
   - F4
   - F5
   - F6
-  - VOL DN
-  - NEXT
-  - boot
   - ''
+  - ''
+  - boot
+  - PREV
   - {type: held}
-  - ão
-  - ões
+  - PP
+  - NEXT
   - ''
   - F11
   - F1
   - F2
   - F3
-  - MUTE
-  - PREV
+  - ''
+  - ''
   - ''
   - BRI DN
   - BRI UP
@@ -188,9 +188,9 @@ layers:
   - aero windows
   - shell flut.
   - captura
+  - lazydocker
+  - lazysql
   - pane ←
-  - pane ↓
-  - pane ↑
   - pane →
   - zoom
   - web
@@ -201,9 +201,9 @@ layers:
   - workspaces
   - mapa teclado
   - lazygit
-  - lazydocker
   - gh dash
-  - lazysql
+  - pane ↓
+  - pane ↑
   - PR atual
   - aero infra
   - code
