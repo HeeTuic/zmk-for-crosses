@@ -134,7 +134,7 @@
             bindings = <
 &hx LC(T)      &hx C        &hx P        &hx N        &hx V        &hx MINUS     &kp LC(LA(LG(S)))        &kp LC(LA(LG(N7)))  &kp LC(LA(LG(N8)))  &kp LC(LA(LG(N9)))  &kp LC(LA(LG(W)))  &hx F
 &hx LC(N)      &hx LC(D)    &hx LC(S)    &hx H        &hx L        &hx Z         &kp LC(LA(LG(N0)))       &kp LC(LA(LG(N4)))  &kp LC(LA(LG(N5)))  &kp LC(LA(LG(N6)))  &kp LC(LA(LG(R)))  &hx W
-&hx LC(K)      &hx LC(G)    &hx LC(P)    &hx J        &hx K        &hx LC(R)     &kp LC(LA(LG(LS(I))))    &kp LC(LA(LG(N1)))  &kp LC(LA(LG(N2)))  &kp LC(LA(LG(N3)))  &kp LC(LA(LG(M)))  &hx G
+&hx LC(K)      &hx LC(G)    &hx LC(P)    &hx J        &hx K        &hx LC(R)     &kp LC(LA(LG(M)))        &kp LC(LA(LG(N1)))  &kp LC(LA(LG(N2)))  &kp LC(LA(LG(N3)))  &kp LC(LA(LG(LS(I))))  &hx G
                                          &trans       &trans       &trans        &hx A            &hx LS(A)   &hx O
             >;
         };
