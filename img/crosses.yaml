@@ -89,12 +89,12 @@ layers:
   - {t: Alt, h: sticky}
   - {t: Cmd, h: sticky}
   Func:
+  - ''
   - BT CLR
   - {t: BT, h: '3'}
   - {t: BT, h: '2'}
   - {t: BT, h: '1'}
   - {t: BT, h: '0'}
-  - ''
   - F12
   - F7
   - F8
