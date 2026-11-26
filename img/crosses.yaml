@@ -112,7 +112,7 @@ layers:
   - F5
   - F6
   - ''
-  - ''
+  - reset
   - boot
   - PREV
   - {type: held}
@@ -124,7 +124,7 @@ layers:
   - F2
   - F3
   - ''
-  - ''
+  - boot
   - ''
   - BRI DN
   - BRI UP
