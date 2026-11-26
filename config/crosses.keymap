@@ -103,13 +103,13 @@
             >;
         };
 
-        // &sl FUNC + 1 tecla: acentos (esq.), F-keys e mídia (dir.), sistema nos polegares
+        // &sl FUNC + 1 tecla: ão/ões e mídia na mão esquerda (descanso), F-keys na direita, sistema nos polegares
         Funcionalidade {
             display-name = "Func";
             bindings = <
-&none         &bt BT_CLR        &bt BT_SEL 3      &bt BT_SEL 2          &bt BT_SEL 1        &bt BT_SEL 0       &kp F12   &kp F7  &kp F8    &kp F9  &kp C_VOL_UP  &kp C_PP
-&sys_reset    &none             &none             &none                 &none               &none              &kp F10   &kp F4  &kp F5    &kp F6  &kp C_VOL_DN  &kp C_NEXT
-&bootloader   &none             &none             &m_ao                 &m_oes              &none              &kp F11   &kp F1  &kp F2    &kp F3  &kp C_MUTE    &kp C_PREV
+&none         &bt BT_CLR        &bt BT_SEL 3      &bt BT_SEL 2          &bt BT_SEL 1        &bt BT_SEL 0       &kp F12   &kp F7  &kp F8    &kp F9  &none         &none
+&sys_reset    &kp C_VOL_DN      &kp C_VOL_UP      &m_oes                &m_ao               &kp C_MUTE         &kp F10   &kp F4  &kp F5    &kp F6  &none         &none
+&bootloader   &kp C_PREV        &none             &kp C_PP              &kp C_NEXT          &none              &kp F11   &kp F1  &kp F2    &kp F3  &none         &none
                                 &none             &kp C_BRI_DN          &kp C_BRI_UP        &kp LG(LS(N4))     &kp LG(LS(N5))     &studio_unlock
             >;
         };
@@ -126,15 +126,15 @@
         };
 
         // Segurar o polegar esquerdo externo. Esquerda = herdr (ctrl+a …): coluna externa tarefas/captura/mapa,
-        // abas e splits em cima, panes ←↓↑→ na home row, popups embaixo. Polegares direitos = agente ▶ ◀ e notificado.
+        // abas e splits em cima, panes nas mesmas posições das setas do NumSetas. Polegares direitos = agente ▶ ◀ e notificado.
         // Direita = AeroSpace via ctrl+alt+⌘ (alt+N fica para o herdr),
         // com os workspaces na mesma posição dos números do layer NumSetas (Fluxo + 5 = alt-5).
         Fluxo {
             display-name = "Fluxo";
             bindings = <
 &hx LC(T)      &hx C        &hx P        &hx N        &hx V        &hx MINUS     &kp LC(LA(LG(S)))        &kp LC(LA(LG(N7)))  &kp LC(LA(LG(N8)))  &kp LC(LA(LG(N9)))  &kp LC(LA(LG(W)))  &hx F
-&hx LC(N)      &hx H        &hx J        &hx K        &hx L        &hx Z         &kp LC(LA(LG(N0)))       &kp LC(LA(LG(N4)))  &kp LC(LA(LG(N5)))  &kp LC(LA(LG(N6)))  &kp LC(LA(LG(R)))  &hx W
-&hx LC(K)      &hx LC(G)    &hx LC(D)    &hx LC(P)    &hx LC(S)    &hx LC(R)     &kp LC(LA(LG(LS(I))))    &kp LC(LA(LG(N1)))  &kp LC(LA(LG(N2)))  &kp LC(LA(LG(N3)))  &kp LC(LA(LG(M)))  &hx G
+&hx LC(N)      &hx LC(D)    &hx LC(S)    &hx H        &hx L        &hx Z         &kp LC(LA(LG(N0)))       &kp LC(LA(LG(N4)))  &kp LC(LA(LG(N5)))  &kp LC(LA(LG(N6)))  &kp LC(LA(LG(R)))  &hx W
+&hx LC(K)      &hx LC(G)    &hx LC(P)    &hx J        &hx K        &hx LC(R)     &kp LC(LA(LG(LS(I))))    &kp LC(LA(LG(N1)))  &kp LC(LA(LG(N2)))  &kp LC(LA(LG(N3)))  &kp LC(LA(LG(M)))  &hx G
                                          &trans       &trans       &trans        &hx A            &hx LS(A)   &hx O
             >;
         };
