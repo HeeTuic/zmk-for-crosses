@@ -6,14 +6,14 @@ layers:
   - Y
   - O
   - X
-  - Spotlight
+  - copiar
   - F
   - C
   - L
   - P
   - Q
   - repetir
-  - {t: herdr prefix, h: ⇧⌥}
+  - Mission Control
   - H
   - I
   - E
@@ -30,7 +30,7 @@ layers:
   - {t: Func, h: sticky}
   - J
   - K
-  - ESC
+  - colar
   - W
   - G
   - M
@@ -102,11 +102,11 @@ layers:
   - VOL UP
   - PP
   - reset
-  - á
-  - é
-  - ê
-  - ã
-  - õ
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - F10
   - F4
   - F5
@@ -114,11 +114,11 @@ layers:
   - VOL DN
   - NEXT
   - boot
-  - ç
+  - ''
   - {type: held}
-  - ção
+  - ão
   - ões
-  - à
+  - ''
   - F11
   - F1
   - F2
@@ -179,26 +179,26 @@ layers:
   - nova aba
   - aba ◀
   - aba ▶
-  - goto
-  - shell flut.
+  - split →
+  - split ↓
   - aero service
   - observ.
   - obsidian
   - scratch
   - aero windows
-  - herdr prefix
+  - shell flut.
   - captura
+  - pane ←
+  - pane ↓
+  - pane ↑
+  - pane →
   - zoom
-  - agente notif.
-  - agente ◀
-  - agente ▶
-  - workspaces
   - web
   - chat
   - devops
   - music
   - aero resize
-  - split →
+  - workspaces
   - mapa teclado
   - lazygit
   - lazydocker
@@ -210,13 +210,13 @@ layers:
   - infra
   - term
   - aero move
-  - split ↓
+  - goto
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - agente ▶
+  - agente ◀
+  - agente notif.
   Scroll:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
