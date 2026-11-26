@@ -111,7 +111,7 @@
         Funcionalidade {
             display-name = "Func";
             bindings = <
-&bt BT_CLR    &bt BT_SEL 3      &bt BT_SEL 2      &bt BT_SEL 1          &bt BT_SEL 0        &none              &kp F12   &kp F7  &kp F8    &kp F9  &kp C_VOL_UP  &kp C_PP
+&none         &bt BT_CLR        &bt BT_SEL 3      &bt BT_SEL 2          &bt BT_SEL 1        &bt BT_SEL 0       &kp F12   &kp F7  &kp F8    &kp F9  &kp C_VOL_UP  &kp C_PP
 &sys_reset    &acc SQT A        &acc SQT E        &acc LS(N6) E         &acc LS(GRAVE) A    &acc LS(GRAVE) O   &kp F10   &kp F4  &kp F5    &kp F6  &kp C_VOL_DN  &kp C_NEXT
 &bootloader   &acc SQT C        &none             &m_cao                &m_oes              &acc GRAVE A       &kp F11   &kp F1  &kp F2    &kp F3  &kp C_MUTE    &kp C_PREV
                                 &none             &kp C_BRI_DN          &kp C_BRI_UP        &kp LG(LS(N4))     &kp LG(LS(N5))     &studio_unlock
